@@ -1,0 +1,22 @@
+Content providers offer granular control over the permissions for accessing data. You can choose to restrict access to a 
+content provider from solely within your application, grant blanket permission to access data from other applications, 
+or configure different permissions for reading and writing data. For more information on using content providers securely, 
+see Security tips for storing data, as well as Content provider permissions.
+
+You can use a content provider to abstract away the details for accessing different data sources in your application. 
+For example, your application might store structured records in a SQLite database, as well as video and audio files. 
+You can use a content provider to access all of this data, if you implement this development pattern in your application.
+
+Also note that CursorLoader objects rely on content providers to run asynchronous queries and then return the results to 
+the UI layer in your application. For more information on using a CursorLoader to load data in the background, 
+see Running a query with a CursorLoader.
+
+The following topics describe content providers in more detail:
+Content provider basics
+How to access and update data using an existing content provider.
+Creating a content provider
+How to design and implement your own content provider.
+Calendar provider
+How to access the Calendar provider that is part of the Android platform.
+Contacts provider
+How to access the Contacts provider that is part of the Android platform.
